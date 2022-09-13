@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/99843bb491.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <main>
+
+            <section class="principal">
+
+                <header class="header">
+                    <img src="img/logo.png" alt="Alura logo" class="logoAlura">
+                </header>
+
+                <div class="input-text">
+                    <textarea spellcheck="false" autofocus placeholder="Ingrese el texto aquí" class="textarea-text" id="textarea-text"></textarea>
+                </div>
+
+                <div class="botones">
+                    <div class="botones-contenido">
+                        <button class="boton-encriptar" id="boton-encriptar">Encriptar</button>
+                        <button class="boton-desencriptar" id="boton-desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="texto-encriptado-desencriptado" id="texto-encriptado-desencriptado">
+
+                <header class="encrip-desencrip">
+                    <h3></h3>
+                </header>
+
+                <img src="img/munieco.png" alt="Muñeco" id="img_munieco">
+
+                <p class="right-side--text" id="p_show_hidden">
+                    Ningún mensaje fue encontrado
+                    <br>
+                    <span>
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </span>
+                </p>
+
+                <p class="text_content" id="text_content"></p>
+                
+                <div class="boton-copiar">
+                    <svg id="copy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z" />
+                    </svg>
+                </div>
+
+            </section>
+            
+        </main>
+
+        <footer class="main-footer">
+                <div id="footer-info">
+                    <h4>Desarrollado por Lorena Natali Gomez © 2022</h4>
+                </div>
+
+                <div class="partFooter">
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/lorena-natali-gomez/" class="icon">
+                            <i class="fa-brands fa-linkedin"></i><use xlink:href="linkedin"></use>
+                        </a>
+                        <a href="https://github.com/lorenang" class="icon">
+                            <i class="fa-brands fa-github"></i><use xlink:href="#github"></use>
+                        </a>  
+                    </div>
+                </div>
+            </footer>
+
+        <script src="js/main.js"></script>
+        <script src="js/copy.js"></script>
+
+    </body>
+
+</html>
