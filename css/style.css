@@ -161,15 +161,18 @@ button{
     height: 20%;
     display: grid;
     justify-items: center;
+    text-align: center;
 }
-.boton-copiar svg{
+.btn-copiar{
     display: none;
-    height: 100%;
-    width: 20%;
     cursor: pointer;
-    fill: #0A3871;
+    justify-content: center;
+    background-color: #eaeef4;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    font-weight: bold;
 }
-.boton-copiar svg:hover{
+.btn-copiar:hover{
     opacity: .8;
 }
 .tooltiptext {
@@ -185,7 +188,7 @@ button{
   font-style: italic;
   z-index: 1;
 }
-svg:hover + .tooltiptext{
+.btn-copiar:hover + .tooltiptext{
     display: inline;
 }
 .text_content{

@@ -5,7 +5,7 @@ const img = document.getElementById('img_munieco')
 const p = document.getElementById('p_show_hidden')
 const div = document.getElementById('texto-encriptado-desencriptado')
 const pEncrypt = document.querySelector('.text_content')
-const copyButton  = document.querySelector('#copy')
+const copyButton  = document.querySelector('#btn-copiar')
 const title = document.querySelector('.encrip-desencrip')
 
 function setElementDisplay(elemen, disp){
@@ -38,9 +38,11 @@ function encriptar(str){
     }
     return newString
 }
+
 function setElementDisplay(elemen, disp){
     elemen.style.display = disp
 }
+
 function desencriptar(str){
     let lower = str.toLowerCase()
     
@@ -61,6 +63,7 @@ function desencriptar(str){
     }
     return lower 
 }
+
 encrip.addEventListener('click', function(){
     if(input.value != ""){
         setElementDisplay(img, 'none')
@@ -78,7 +81,7 @@ desencrip.addEventListener('click', function (){
     if(input.value != ""){
         setElementDisplay(img, 'none')
         setElementDisplay(p, 'none')
-        setElementDisplay(copyButton, 'none')
+        setElementDisplay(copyButton, 'block')
         setElementDisplay(title, 'block')
     
         title.textContent = '¡Desencriptado!'
@@ -90,7 +93,7 @@ desencrip.addEventListener('click', function (){
 
 // funcion copiar
 
-const copiar = document.getElementById('copy')
+const copiar = document.getElementById('btn-copiar')
 const texto = document.getElementById('text_content')
 
 copiar.addEventListener('click', () => {
