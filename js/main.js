@@ -102,4 +102,3 @@ copiar.addEventListener('click', () => {
     texto.textContent = '¡Texto copiado!'
     
 })
-
