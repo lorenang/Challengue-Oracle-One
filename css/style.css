@@ -258,7 +258,7 @@ footer {
     align-items: center;
 
 }
-.social-media i {
+.soporte i {
     display:inline-block;
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -274,7 +274,7 @@ footer {
     text-align: center;
     align-items: center;
 }
-.social-media i:hover {
+.soporte i:hover {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-color: #ffffff;
